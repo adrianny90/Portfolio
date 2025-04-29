@@ -3,23 +3,24 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
-      description: "A web app built with React and Node.js.",
-      image: "./src/image/project1.jpg",
-      link: "https://example.com",
+      title: "E-Commerce Fake",
+      description: "A web app built with React and Vite.",
+      image:
+        "https://thaka.bing.com/th/id/OIP.LeyZ3l-PnC7b3B_VLFSgMwHaE7?w=290&h=194&c=7&r=0&o=5&pid=1.77",
+      link: "https://ecommercefake.onrender.com/",
     },
-    {
-      title: "Project Two",
-      description: "An e-commerce platform with Tailwind CSS.",
-      image: "./src/image/project2.jpg",
-      link: "https://example.com",
-    },
-    {
-      title: "Project Three",
-      description: "A portfolio website with MongoDB backend.",
-      image: "./src/image/project3.jpg",
-      link: "https://example.com",
-    },
+    // {
+    //   title: "Project Two",
+    //   description: "An e-commerce platform with Tailwind CSS.",
+    //   image: "./src/image/project2.jpg",
+    //   link: "https://example.com",
+    // },
+    // {
+    //   title: "Project Three",
+    //   description: "A portfolio website with MongoDB backend.",
+    //   image: "./src/image/project3.jpg",
+    //   link: "https://example.com",
+    // },
   ];
 
   return (
