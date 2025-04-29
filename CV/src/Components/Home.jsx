@@ -71,7 +71,7 @@ export default function Home() {
         >
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-500">
             <img
-              src="./src/image/AB.jpg"
+              src="./image/AB.jpg"
               alt="Adrian Bakalarz"
               className="w-full h-full object-cover"
             />
