@@ -35,28 +35,6 @@ const Home = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className=" ">
-        <div>
-          <Link to="/jewelery">
-            <button className="bg-blue-200 border-2 border-blue-500 text-blue-700 m-4 px-6 py-2 text-2xl font-bold rounded-lg shadow-md hover:bg-blue-300 hover:border-blue-600 transition duration-300">
-              Jewelery
-            </button>
-          </Link>
-          <Link to="/electronics">
-            <button className="bg-blue-200 border-2 border-blue-500 text-blue-700 m-4 px-6 py-2 text-2xl font-bold rounded-lg shadow-md hover:bg-blue-300 hover:border-blue-600 transition duration-300">
-              Electronics
-            </button>
-          </Link>
-          <Link to="/mensclothing">
-            <button className="bg-blue-200 border-2 border-blue-500 text-blue-700 m-4 px-6 py-2 text-2xl font-bold rounded-lg shadow-md hover:bg-blue-300 hover:border-blue-600 transition duration-300">
-              Men's clothing
-            </button>
-          </Link>
-          <Link to="/womensclothing">
-            <button className="bg-blue-200 border-2 border-blue-500 text-blue-700 m-4 px-6 py-2 text-2xl font-bold rounded-lg shadow-md hover:bg-blue-300 hover:border-blue-600 transition duration-300">
-              Women's clothing
-            </button>
-          </Link>
-        </div>
         <h1 className="text-6xl my-6 font-bold mb-4 text-black text-center">
           Our Products
         </h1>{" "}

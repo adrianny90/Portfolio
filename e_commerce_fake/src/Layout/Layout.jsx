@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
@@ -20,13 +20,15 @@ const Layout = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
-      <Navbar />
-      <main className="flex-grow">
-        <Outlet context={{ cart, setCart }} />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div className="min-h-screen bg-gray-100 flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <Outlet context={{ cart, setCart }} />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 
