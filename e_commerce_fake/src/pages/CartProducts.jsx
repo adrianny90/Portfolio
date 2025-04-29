@@ -4,7 +4,7 @@ import { removeFromCart } from "../utils/helpers";
 
 const CartProducts = ({ shop, setShop }) => {
   const [price, setPrice] = useState(0);
-  console.log("cartProducts", shop);
+  // console.log("cartProducts", shop);
 
   useEffect(() => {
     const totalPrice = shop.reduce(

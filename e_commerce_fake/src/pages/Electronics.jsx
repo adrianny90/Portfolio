@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import { useAllProducts } from "./AllProductsContext";
 import { useOutletContext } from "react-router";
+import Categories from "../components/Categories";
 
 const Electronics = () => {
   const context = useAllProducts();
@@ -11,6 +12,7 @@ const Electronics = () => {
   );
   return (
     <div className="p-4">
+      <Categories />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full max-w-7xl mx-auto">
         {filteredProducts.map((product) => (
           <div

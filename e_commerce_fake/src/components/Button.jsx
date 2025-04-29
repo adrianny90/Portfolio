@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 const Button = ({ product, shop, setShop }) => {
   const [count, setCount] = useState(0);
-  console.log("cart in button element", shop);
+  // console.log("cart in button element", shop);
 
   useEffect(() => {
     const productInCart = shop.find((item) => item.id === product.id);

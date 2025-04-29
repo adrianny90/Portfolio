@@ -3,3 +3,7 @@ export const removeFromCart = ({ shop, setShop }, productId) => {
   setShop(updatedShop);
   localStorage.setItem("cart", JSON.stringify(updatedShop));
 };
+
+export const clearCart = () => {
+  localStorage.setItem("cart", JSON.stringify([]));
+};
