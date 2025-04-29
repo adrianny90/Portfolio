@@ -1,4 +1,12 @@
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3 } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaJs,
+  FaHtml5,
+  FaCss3,
+  FaPython,
+} from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -11,6 +19,8 @@ export default function Skills() {
     { name: "CSS3", icon: <FaCss3 /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "Python", icon: <FaPython /> },
+    { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
   ];
 
   return (
@@ -19,7 +29,7 @@ export default function Skills() {
         <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-12">
           My Skills
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}

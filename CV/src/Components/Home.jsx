@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <section id="home" className="min-h-screen flex items-center bg-gray-900">
+    <section
+      id="home"
+      className="min-h-screen w-full flex items-center bg-gray-900"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <motion.div
           className="flex flex-col justify-center"
@@ -17,10 +20,10 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-semibold mb-6">
             Fullstack Web Developer
           </h2>
-          <p className="text-lg text-gray-300 mb-8">
+          <p className=" text-lg text-gray-300 mb-8">
             Transforming Ideas into Beautifully Responsive Websites
           </p>
-          <div className="flex gap-4 mb-6">
+          <div className="flex flex-wrap gap-4 mb-6">
             <a
               href="#contact"
               className="bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600 transition-colors duration-300"
@@ -35,9 +38,9 @@ export default function Home() {
               Download CV
             </a>
           </div>
-          <div className="flex gap-6 text-3xl">
+          <div className="flex flex-wrap gap-6 text-3xl">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/adrianny90"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-400 transition-colors duration-300"
@@ -45,7 +48,7 @@ export default function Home() {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/adrianbakalarzadrian"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-400 transition-colors duration-300"
@@ -53,7 +56,7 @@ export default function Home() {
               <FaLinkedin />
             </a>
             <a
-              href="https://wa.me/yourphonenumber"
+              href="https://wa.me/+491625204568"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-400 transition-colors duration-300"
@@ -71,7 +74,7 @@ export default function Home() {
         >
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-teal-500">
             <img
-              src="./src/image/AB.jpg"
+              src="./image/AB.jpg"
               alt="Adrian Bakalarz"
               className="w-full h-full object-cover"
             />
