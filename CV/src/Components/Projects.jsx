@@ -12,13 +12,17 @@ export default function Projects() {
       image:
         "https://thaka.bing.com/th/id/OIP.LeyZ3l-PnC7b3B_VLFSgMwHaE7?w=290&h=194&c=7&r=0&o=5&pid=1.77",
       link: "https://ecommercefake.onrender.com/",
+      repo: "https://github.com/adrianny90/Portfolio/tree/main/e_commerce_fake",
     },
-    // {
-    //   title: "Project Two",
-    //   description: "An e-commerce platform with Tailwind CSS.",
-    //   image: "./src/image/project2.jpg",
-    //   link: "https://example.com",
-    // },
+    {
+      title: "Blog with recipes",
+      description:
+        "Fullstack blog with frontend in React, TailwindCss and backend in Node.js.",
+      image:
+        "https://images.lecker.de/tarta-mit-kirschen-und-schokolade-lecker-03-2025,id=29a4d334,b=lecker,w=980,rm=sk.webp",
+      link: "https://fullstack-blog-31jr.onrender.com/",
+      repo: "https://github.com/adrianny90/Fullstack-blog",
+    },
     // {
     //   title: "Project Three",
     //   description: "A portfolio website with MongoDB backend.",
@@ -33,13 +37,17 @@ export default function Projects() {
       image:
         "https://thaka.bing.com/th/id/OIP.LeyZ3l-PnC7b3B_VLFSgMwHaE7?w=290&h=194&c=7&r=0&o=5&pid=1.77",
       link: "https://ecommercefake.onrender.com/",
+      repo: "https://github.com/adrianny90/Portfolio/tree/main/e_commerce_fake",
     },
-    // {
-    //   title: "Project Two",
-    //   description: "An e-commerce platform with Tailwind CSS.",
-    //   image: "./src/image/project2.jpg",
-    //   link: "https://example.com",
-    // },
+    {
+      title: "Blog mit Rezepten",
+      description:
+        "Fullstack-Blog mit Frontend in React, TailwindCss und Backend in Node.js.",
+      image:
+        "https://images.lecker.de/tarta-mit-kirschen-und-schokolade-lecker-03-2025,id=29a4d334,b=lecker,w=980,rm=sk.webp",
+      link: "https://fullstack-blog-31jr.onrender.com/",
+      repo: "https://github.com/adrianny90/Fullstack-blog",
+    },
     // {
     //   title: "Project Three",
     //   description: "A portfolio website with MongoDB backend.",
@@ -85,7 +93,7 @@ export default function Projects() {
                     </a>
 
                     <a
-                      href="https://github.com/adrianny90/Portfolio/tree/main/e_commerce_fake"
+                      href={project.repo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className=" hover:text-teal-400 transition-colors duration-300"
@@ -133,7 +141,7 @@ export default function Projects() {
                     </a>
 
                     <a
-                      href="https://github.com/adrianny90/Portfolio/tree/main/e_commerce_fake"
+                      href={projekt.repo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className=" hover:text-teal-400 transition-colors duration-300"
