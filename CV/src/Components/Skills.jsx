@@ -9,8 +9,12 @@ import {
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
+import { useState, useContext } from "react";
+import { LanguageContext } from "./LanguageProvider";
 
 export default function Skills() {
+  const { lang } = useContext(LanguageContext);
+
   const skills = [
     { name: "React", icon: <FaReact /> },
     { name: "Node.js", icon: <FaNodeJs /> },
@@ -26,9 +30,15 @@ export default function Skills() {
   return (
     <section id="skills" className="py-16 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-12">
-          My Skills
-        </h2>
+        {!lang ? (
+          <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-12">
+            My Skills
+          </h2>
+        ) : (
+          <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-12">
+            Meine Fähigkeiten
+          </h2>
+        )}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <motion.div
