@@ -1,20 +1,11 @@
-import { Resend } from "resend";
-import { emailSample } from "./email";
-import { toast } from "react-toastify";
-
-const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
-
 export const contactMe = async (name, email, message) => {
-  try {
-    //onboarding@resend.dev
-    await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "adrianny90@wp.pl",
-      subject: "CV Job Allert",
-      html: emailSample(name, email, message),
-    });
-    toast.success(`${name} sent successfully email to Adrian. Thank you.`);
-  } catch (error) {
-    throw new Error("Error sending email");
-  }
+  const formData = { name: name, email: email, message: message };
+  const res = await fetch(`http://localhost:3000/contact`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
+  if (!res) throw new Error("Error while signing up");
+  const data = await res.json();
+  return data;
 };

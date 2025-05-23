@@ -1,0 +1,19 @@
+{
+  "name": "server_cv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file=.env --watch index.js"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react-toastify": "^11.0.5",
+    "resend": "^4.5.1"
+  }
+}

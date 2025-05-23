@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useState, useContext } from "react";
 import { LanguageContext } from "./LanguageProvider";
 import { contactMe } from "../email/contactMe";
+import { toast } from "react-toastify";
+
 export default function ContactMe() {
   const { lang } = useContext(LanguageContext);
   const [{ name, email, message }, setForm] = useState({
@@ -18,6 +20,10 @@ export default function ContactMe() {
       if (!name || !email || !message)
         throw new Error("All fields are required");
       await contactMe(name, email, message);
+      toast.success(
+        `${name}, you successfully reached out to Adrian. Thank you for your message. `
+      );
+      setForm({ name: "", email: "", message: "" });
     } catch (error) {
       console.error(error);
     }
@@ -52,6 +58,7 @@ export default function ContactMe() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Your Name"
+                  required={true}
                 />
               </div>
               <div className="mb-6">
@@ -69,6 +76,7 @@ export default function ContactMe() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Your Email"
+                  required={true}
                 />
               </div>
               <div className="mb-6">
@@ -86,6 +94,7 @@ export default function ContactMe() {
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   rows="5"
                   placeholder="Your Message"
+                  required={true}
                 ></textarea>
               </div>
               <button
