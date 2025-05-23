@@ -1,10 +1,27 @@
 import { motion } from "framer-motion";
 import { useState, useContext } from "react";
 import { LanguageContext } from "./LanguageProvider";
-
+import { contactMe } from "../email/contactMe";
 export default function ContactMe() {
   const { lang } = useContext(LanguageContext);
+  const [{ name, email, message }, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) =>
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      if (!name || !email || !message)
+        throw new Error("All fields are required");
+      await contactMe(name, email, message);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       {!lang ? (
@@ -18,6 +35,7 @@ export default function ContactMe() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              onSubmit={handleSubmit}
             >
               <div className="mb-6">
                 <label
@@ -29,6 +47,9 @@ export default function ContactMe() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  value={name}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Your Name"
                 />
@@ -43,6 +64,9 @@ export default function ContactMe() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  value={email}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Your Email"
                 />
@@ -56,6 +80,9 @@ export default function ContactMe() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  value={message}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   rows="5"
                   placeholder="Your Message"
