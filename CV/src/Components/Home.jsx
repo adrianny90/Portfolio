@@ -26,7 +26,8 @@ export default function Home() {
                 Fullstack Web Developer
               </h2>
               <p className=" text-lg text-gray-300 mb-8">
-                Transforming Ideas into Beautifully Responsive Websites
+                Passionate about designing and coding websites that blend
+                functionality with beautiful design.
               </p>
               <div className="flex flex-wrap gap-4 mb-6">
                 <a
@@ -106,7 +107,8 @@ export default function Home() {
                 Fullstack-Webentwickler
               </h2>
               <p className=" text-lg text-gray-300 mb-8">
-                Ideen in ansprechende, responsive Websites umsetzen
+                Leidenschaftlich am Entwerfen und Programmieren von Websites,
+                die Funktionalität mit ansprechendem Design verbinden.
               </p>
               <div className="flex flex-wrap gap-4 mb-6">
                 <a

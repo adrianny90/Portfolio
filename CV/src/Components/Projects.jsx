@@ -45,7 +45,7 @@ export default function Projects() {
         "Fullstack-Blog mit Frontend in React, TailwindCss und Backend in Node.js.",
       image:
         "https://images.lecker.de/tarta-mit-kirschen-und-schokolade-lecker-03-2025,id=29a4d334,b=lecker,w=980,rm=sk.webp",
-      link: "https://fullstack-blog-31jr.onrender.com/",
+      link: "https://fullstack-blog-ui.onrender.com/",
       repo: "https://github.com/adrianny90/Fullstack-blog",
     },
     // {

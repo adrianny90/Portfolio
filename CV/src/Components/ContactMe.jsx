@@ -20,9 +20,16 @@ export default function ContactMe() {
       if (!name || !email || !message)
         throw new Error("All fields are required");
       await contactMe(name, email, message);
-      toast.success(
-        `${name}, you successfully reached out to Adrian. Thank you for your message. `
-      );
+      if (!lang) {
+        toast.success(
+          `${name}, you successfully reached out to Adrian. Thank you for your message. `
+        );
+      } else {
+        toast.success(
+          `${name}, Sie haben Adrian erfolgreich kontaktiert. Vielen Dank für Ihre Nachricht. `
+        );
+      }
+
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       console.error(error);
@@ -117,6 +124,7 @@ export default function ContactMe() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              onSubmit={handleSubmit}
             >
               <div className="mb-6">
                 <label
@@ -130,6 +138,10 @@ export default function ContactMe() {
                   id="name"
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Ihr Name"
+                  name="name"
+                  value={name}
+                  onChange={handleChange}
+                  required={true}
                 />
               </div>
               <div className="mb-6">
@@ -144,6 +156,10 @@ export default function ContactMe() {
                   id="email"
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   placeholder="Ihre Email"
+                  name="email"
+                  value={email}
+                  onChange={handleChange}
+                  required={true}
                 />
               </div>
               <div className="mb-6">
@@ -158,6 +174,10 @@ export default function ContactMe() {
                   className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   rows="5"
                   placeholder="Ihre Nachricht"
+                  name="message"
+                  value={message}
+                  onChange={handleChange}
+                  required={true}
                 ></textarea>
               </div>
               <button

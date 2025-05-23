@@ -29,32 +29,62 @@ export default function AboutMe() {
               {!lang ? (
                 <>
                   <p className="mb-4 text-lg leading-relaxed">
-                    I'm Adrian Bakalarz, a passionate Fullstack Web Developer
-                    with experience in building responsive and user-friendly
-                    websites. I specialize in technologies like React, Node.js,
-                    and Tailwind CSS.
+                    I’m a skilled Fullstack Web Developer and Controls Engineer
+                    with extensive experience in building responsive,
+                    user-friendly websites and industrial automation systems. My
+                    expertise spans technologies like React, JavaScript,
+                    Node.js, Tailwind CSS, Python, and PostgreSQL, as well as
+                    PLC programming and HMI/SCADA development.
                   </p>
-                  <p className="text-lg leading-relaxed">
-                    My goal is to transform ideas into reality through clean
-                    code and innovative solutions. When I'm not coding, you can
-                    find me exploring new tech trends or working on personal
-                    projects.
+                  <p className="mb-4 text-lg leading-relaxed">
+                    I see a strong parallel between industrial systems and web
+                    applications: PLCs, motors, and sensors act as the robust
+                    backend, while HMIs and SCADA systems serve as the intuitive
+                    frontend. Over the past three years, I worked at Tesla, one
+                    of the most technologically advanced companies, as a
+                    Controls Engineer. There, I honed my skills in cutting-edge
+                    automation technologies, including PLC, SCADA, HMI, and
+                    integrated software solutions using Python and PostgreSQL.
+                  </p>
+                  <p className="mb-4 text-lg leading-relaxed">
+                    My passion is transforming complex ideas into seamless,
+                    innovative solutions—whether it’s crafting clean code for
+                    web applications or designing reliable control systems. When
+                    I’m not coding, I’m exploring emerging tech trends or
+                    building personal projects to push my skills further.
                   </p>
                 </>
               ) : (
                 <>
                   <p className="mb-4 text-lg leading-relaxed">
-                    Ich bin Adrian Bakalarz, ein leidenschaftlicher
-                    Fullstack-Programmier-Enthusiast Webentwickler mit Erfahrung
-                    in der Erstellung von responsiven und benutzerfreundliche
-                    Websites. Ich bin spezialisiert auf Technologien wie React,
-                    Node.js und Rückenwind-CSS.
+                    Ich bin ein erfahrener Fullstack-Webentwickler und
+                    Steuerungsingenieur mit umfassender Erfahrung in der
+                    Entwicklung responsiver, benutzerfreundlicher Websites und
+                    industrieller Automatisierungssysteme. Meine Expertise
+                    umfasst Technologien wie React, JavaScript, Node.js,
+                    Tailwind CSS, Python und PostgreSQL sowie SPS-Programmierung
+                    und HMI/SCADA-Entwicklung.
                   </p>
-                  <p className="text-lg leading-relaxed">
-                    Mein Ziel ist es, Ideen in die Realität umzusetzen durch
-                    sauberen Code und innovative Lösungen. Wenn nicht Ich
-                    programmiere, erkunde neue Technologietrends oder arbeite an
-                    persönlichen Projekten.
+                  <p className="mb-4 text-lg leading-relaxed">
+                    Ich sehe eine starke Parallele zwischen industriellen
+                    Systemen und Webanwendungen: SPS, Motoren und Sensoren
+                    bilden das robuste Backend, während HMIs und SCADA-Systeme
+                    das intuitive Frontend bilden. In den letzten drei Jahren
+                    habe ich bei Tesla, einem der technologisch
+                    fortschrittlichsten Unternehmen, als Steuerungsingenieur
+                    gearbeitet. Dort habe ich meine Kenntnisse in modernsten
+                    Automatisierungstechnologien wie SPS, SCADA, HMI und
+                    integrierten Softwarelösungen mit Python und PostgreSQL
+                    verfeinert.
+                  </p>
+                  <p className="mb-4 text-lg leading-relaxed">
+                    Meine Leidenschaft ist es, komplexe Ideen in nahtlose,
+                    innovative Lösungen zu verwandeln – sei es beim Erstellen
+                    von sauberem Code für Webanwendungen oder beim Entwurf
+                    zuverlässiger Steuerungssysteme. Wenn ich nicht gerade
+                    programmiere, erforsche ich neue Technologietrends oder
+                    entwickle persönliche Projekte, um meine Fähigkeiten
+                    weiterzuentwickeln.
                   </p>
                 </>
               )}
