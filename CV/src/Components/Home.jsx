@@ -19,16 +19,18 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-teal-400 mb-4">
-                Hi, I'm Adrian Bakalarz
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-                Fullstack Web Developer
-              </h2>
-              <p className=" text-lg text-gray-300 mb-8">
-                Passionate about designing and coding websites that blend
-                functionality with beautiful design.
-              </p>
+              <div className="pt-20 sm:pt-42 md:pt-30 lg:pt-20">
+                <h1 className="text-4xl md:text-5xl font-bold text-teal-400 mb-4">
+                  Hi, I'm Adrian Bakalarz
+                </h1>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+                  Fullstack Web Developer
+                </h2>
+                <p className=" text-lg text-gray-300 mb-8">
+                  Passionate about designing and coding websites that blend
+                  functionality with beautiful design.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-4 mb-6">
                 <a
                   href="#contact"
@@ -100,29 +102,31 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-teal-400 mb-4">
-                Hallo, Ich bin Adrian Bakalarz
-              </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-                Fullstack-Webentwickler
-              </h2>
-              <p className=" text-lg text-gray-300 mb-8">
-                Leidenschaftlich am Entwerfen und Programmieren von Websites,
-                die Funktionalität mit ansprechendem Design verbinden.
-              </p>
+              <div className="pt-20 sm:pt-42 md:pt-30 lg:pt-20">
+                <h1 className="text-4xl md:text-5xl font-bold text-teal-400 mb-4">
+                  Hallo, Ich bin Adrian Bakalarz
+                </h1>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+                  Fullstack-Webentwickler
+                </h2>
+                <p className=" text-lg text-gray-300 mb-8">
+                  Leidenschaftlich am Entwerfen und Programmieren von Websites,
+                  die Funktionalität mit ansprechendem Design verbinden.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-4 mb-6">
                 <a
                   href="#contact"
                   className="bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600 transition-colors duration-300"
                 >
-                  Kontaktiere mich
+                  Kontakt
                 </a>
                 <a
                   href="/path-to-cv.pdf"
                   download
                   className="border-2 border-teal-500 text-teal-500 px-6 py-3 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300"
                 >
-                  Lebenslauf herunterladen
+                  Lebenslauf
                 </a>
               </div>
               <div className="flex flex-wrap gap-6 text-3xl">

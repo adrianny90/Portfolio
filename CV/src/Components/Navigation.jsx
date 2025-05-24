@@ -89,7 +89,7 @@ export default function Navigation() {
                   href="#home"
                   className="hover:text-teal-400 transition-colors duration-300"
                 >
-                  Startseite
+                  Start
                 </a>
               </li>
               <li>
@@ -97,7 +97,7 @@ export default function Navigation() {
                   href="#skills"
                   className="hover:text-teal-400 transition-colors duration-300"
                 >
-                  Fähigkeiten
+                  Skills
                 </a>
               </li>
               <li>
@@ -113,7 +113,7 @@ export default function Navigation() {
                   href="#about"
                   className="hover:text-teal-400 transition-colors duration-300"
                 >
-                  Über mich
+                  Über
                 </a>
               </li>
               <li>
