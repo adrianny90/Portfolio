@@ -11,10 +11,12 @@ export default function ContactMe() {
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
   const handleSubmit = async (e) => {
+    setIsLoading(true);
     try {
       e.preventDefault();
       if (!name || !email || !message)
@@ -33,6 +35,8 @@ export default function ContactMe() {
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       console.error(error);
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -107,8 +111,9 @@ export default function ContactMe() {
               <button
                 type="submit"
                 className="w-full bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600 transition-colors duration-300"
+                disabled={isLoading}
               >
-                Send Message
+                {isLoading ? "Sending..." : "Send Message"}
               </button>
             </motion.form>
           </div>
@@ -183,8 +188,9 @@ export default function ContactMe() {
               <button
                 type="submit"
                 className="w-full bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-teal-600 transition-colors duration-300"
+                disabled={isLoading}
               >
-                Nachricht senden
+                {isLoading ? "Senden..." : "Nachricht senden"}
               </button>
             </motion.form>
           </div>
