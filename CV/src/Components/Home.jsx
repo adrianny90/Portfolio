@@ -39,7 +39,7 @@ export default function Home() {
                   Contact Me
                 </a>
                 <a
-                  href="/path-to-cv.pdf"
+                  href="/CV Lebenslauf-AB.pdf"
                   download
                   className="border-2 border-teal-500 text-teal-500 px-6 py-3 rounded-full hover:bg-teal-500 hover:text-white transition-colors duration-300"
                 >
