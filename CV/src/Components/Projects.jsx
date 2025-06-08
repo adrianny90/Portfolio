@@ -7,7 +7,7 @@ export default function Projects() {
   const { lang } = useContext(LanguageContext);
   const projects = [
     {
-      title: "E-Commerce Fake",
+      title: "Simulated e-commerce application",
       description:
         "A web app built with React, Vite, and TailwindCSS, designed to emulate an e-commerce shop. It utilizes localStorage for persistent data storage, enabling features like saving user preferences and cart items across sessions. The application also incorporates responsive design for seamless use across devices.",
       image:
@@ -36,9 +36,9 @@ export default function Projects() {
   ];
   const projekte = [
     {
-      title: "E-Commerce-Fälschung",
+      title: "Simulierte E-Commerce Anwendung",
       description:
-        "Eine Web-App, die mit React, Vite und TailwindCSS entwickelt wurde und einen E-Commerce-Shop emuliert. Sie nutzt localStorage für die persistente Datenspeicherung und ermöglicht so Funktionen wie das Speichern von Benutzereinstellungen und Warenkorbartikeln über mehrere Sitzungen hinweg. Die Anwendung verfügt außerdem über ein responsives Design für die nahtlose Nutzung auf verschiedenen Geräten.",
+        "Diese Webanwendung wurde mit React, Vite und Tailwind CSS entwickelt und simuliert die Funktionalität eines modernen E-Commerce-Shops. Sie nutzt den localStorage zur persistenten Speicherung von Daten, wodurch benutzerspezifische Einstellungen und Warenkorbinhalte auch über mehrere Sitzungen hinweg erhalten bleiben. Dank ihres responsiven Designs ist die Anwendung nahtlos auf verschiedenen Endgeräten nutzbar – von Desktop bis Smartphone. Ziel des Projekts war es, zentrale Aspekte eines Fullstack-Workflows wie State-Management, Benutzerinteraktion und Frontend-Performance praxisnah umzusetzen.",
       image:
         "https://thaka.bing.com/th/id/OIP.LeyZ3l-PnC7b3B_VLFSgMwHaE7?w=290&h=194&c=7&r=0&o=5&pid=1.77",
       link: "https://ecommercefake.onrender.com/",
@@ -47,7 +47,7 @@ export default function Projects() {
     {
       title: "Blog mit Rezepten",
       description:
-        "Eine Fullstack-Blog-Anwendung mit einem Frontend, das mit React, TailwindCSS und Vite für eine schnelle und reaktionsschnelle Benutzeroberfläche entwickelt wurde. Das Backend basiert auf Node.js und Express und bietet robuste API-Endpunkte für das Content-Management. Es nutzt eine PostgreSQL-Datenbank für effiziente Datenspeicherung und -abfrage.",
+        "Bei dieser Fullstack-Blog-Anwendung wurde das Frontend mit React, Tailwind CSS und Vite entwickelt, um eine schnelle und reaktionsfähige Benutzeroberfläche zu gewährleisten. Das Backend basiert auf Node.js und Express und stellt robuste API-Endpunkte für das Content-Management bereit. Für die effiziente Speicherung und Abfrage der Daten kommt eine PostgreSQL-Datenbank zum Einsatz.",
       image:
         "https://images.lecker.de/tarta-mit-kirschen-und-schokolade-lecker-03-2025,id=29a4d334,b=lecker,w=980,rm=sk.webp",
       link: "https://fullstack-blog-ui.onrender.com/",
@@ -56,7 +56,7 @@ export default function Projects() {
     {
       title: "Give Berlin",
       description:
-        "Dies ist eine Plattform zum kostenlosen Teilen gebrauchter Artikel, erstellt mit Vite, React, TailwindCSS, Vanilla CSS, React Router, Node.js, Express und MongoDB. Sie bietet Benutzerauthentifizierung, E-Mail-Verifizierung, Nachrichtenaustausch zwischen Benutzern und eine interaktive Karte mit allen aufgelisteten Artikeln.",
+        "Bei dieser Plattform handelt es sich um eine Anwendung zum kostenfreien Teilen gebrauchter Artikel, entwickelt mit Vite, React, Tailwind CSS, Vanilla CSS, React Router, Node.js, Express und MongoDB. Die Anwendung umfasst Funktionen wie Benutzerauthentifizierung, E-Mail-Verifizierung, einen Nachrichtenaustausch zwischen Nutzern sowie eine interaktive Karte, die alle gelisteten Artikel übersichtlich darstellt.",
       image: "https://berlingive.onrender.com/image/img.jpg",
       link: "https://berlingive.onrender.com",
       repobackend: "https://github.com/adrianny90/Final_project_server",

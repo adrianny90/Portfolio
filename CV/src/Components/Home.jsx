@@ -110,8 +110,9 @@ export default function Home() {
                   Fullstack-Webentwickler
                 </h2>
                 <p className=" text-lg text-gray-300 mb-8">
-                  Leidenschaftlich am Entwerfen und Programmieren von Websites,
-                  die Funktionalität mit ansprechendem Design verbinden.
+                  Mit großer Leidenschaft entwerfe und programmiere ich
+                  Websites, die technische Funktionalität nahtlos mit
+                  ansprechendem Design verbinden.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 mb-6">

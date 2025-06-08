@@ -58,24 +58,25 @@ export default function AboutMe() {
                 <>
                   <p className="mb-4 text-lg leading-relaxed">
                     Ich bin ein erfahrener Fullstack-Webentwickler und
-                    Steuerungsingenieur mit umfassender Erfahrung in der
-                    Entwicklung responsiver, benutzerfreundlicher Websites und
-                    industrieller Automatisierungssysteme. Meine Expertise
-                    umfasst Technologien wie React, JavaScript, Node.js,
-                    Tailwind CSS, Python und PostgreSQL sowie SPS-Programmierung
-                    und HMI/SCADA-Entwicklung.
+                    Steuerungsingenieur mit fundierter Expertise in der
+                    Entwicklung responsiver, benutzerfreundlicher Webanwendungen
+                    sowie industrieller Automatisierungssysteme. Mein
+                    technologisches Know-how umfasst unter anderem React,
+                    JavaScript, Node.js, Tailwind CSS, Python und PostgreSQL –
+                    ergänzt durch umfassende Kenntnisse in der
+                    SPS-Programmierung sowie der HMI- und SCADA-Entwicklung.
                   </p>
                   <p className="mb-4 text-lg leading-relaxed">
-                    Ich sehe eine starke Parallele zwischen industriellen
-                    Systemen und Webanwendungen: SPS, Motoren und Sensoren
-                    bilden das robuste Backend, während HMIs und SCADA-Systeme
-                    das intuitive Frontend bilden. In den letzten drei Jahren
-                    habe ich bei Tesla, einem der technologisch
-                    fortschrittlichsten Unternehmen, als Steuerungsingenieur
-                    gearbeitet. Dort habe ich meine Kenntnisse in modernsten
-                    Automatisierungstechnologien wie SPS, SCADA, HMI und
-                    integrierten Softwarelösungen mit Python und PostgreSQL
-                    verfeinert.
+                    Ich sehe eine klare Parallele zwischen modernen
+                    Webanwendungen und industriellen Systemen: SPS, Motoren und
+                    Sensoren bilden das leistungsfähige Backend, während HMIs
+                    und SCADA-Oberflächen das benutzerzentrierte Frontend
+                    darstellen. In den vergangenen drei Jahren war ich bei Tesla
+                    tätig – einem der weltweit führenden Unternehmen in puncto
+                    technologischer Innovation. Dort konnte ich meine
+                    Fähigkeiten in hochmodernen Automatisierungstechnologien
+                    sowie integrierten Softwarelösungen mit Python und
+                    PostgreSQL gezielt vertiefen und erweitern.
                   </p>
                   <p className="mb-4 text-lg leading-relaxed">
                     Meine Leidenschaft ist es, komplexe Ideen in nahtlose,
