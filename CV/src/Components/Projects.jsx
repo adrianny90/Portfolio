@@ -38,7 +38,7 @@ export default function Projects() {
     {
       title: "Simulierte E-Commerce Anwendung",
       description:
-        "Diese Webanwendung wurde mit React, Vite und Tailwind CSS entwickelt und simuliert die Funktionalität eines modernen E-Commerce-Shops. Sie nutzt den localStorage zur persistenten Speicherung von Daten, wodurch benutzerspezifische Einstellungen und Warenkorbinhalte auch über mehrere Sitzungen hinweg erhalten bleiben. Dank ihres responsiven Designs ist die Anwendung nahtlos auf verschiedenen Endgeräten nutzbar – von Desktop bis Smartphone. Ziel des Projekts war es, zentrale Aspekte eines Fullstack-Workflows wie State-Management, Benutzerinteraktion und Frontend-Performance praxisnah umzusetzen.",
+        "Diese Webanwendung wurde mit React, Vite und Tailwind CSS entwickelt und simuliert die Funktionalität eines modernen E-Commerce-Shops. Sie nutzt den localStorage zur persistenten Speicherung von Daten, wodurch benutzerspezifische Einstellungen und Warenkorbinhalte auch über mehrere Sitzungen hinweg erhalten bleiben. Dank ihres responsiven Designs ist die Anwendung nahtlos auf verschiedenen Endgeräten nutzbar – von Desktop bis Smartphone.", // Ziel des Projekts war es, zentrale Aspekte eines Fullstack-Workflows wie State-Management, Benutzerinteraktion und Frontend-Performance praxisnah umzusetzen.",
       image:
         "https://thaka.bing.com/th/id/OIP.LeyZ3l-PnC7b3B_VLFSgMwHaE7?w=290&h=194&c=7&r=0&o=5&pid=1.77",
       link: "https://ecommercefake.onrender.com/",
