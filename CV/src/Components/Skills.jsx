@@ -5,11 +5,19 @@ import {
   FaHtml5,
   FaCss3,
   FaPython,
+  FaDocker,
+  FaAws,
+  FaGithub,
 } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiTailwindcss, SiMongodb } from "react-icons/si";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import {
+  SiTailwindcss,
+  SiMongodb,
+  SiGithubactions,
+  SiFastapi,
+} from "react-icons/si";
 import { motion } from "framer-motion";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "./LanguageProvider";
 
 export default function Skills() {
@@ -25,6 +33,12 @@ export default function Skills() {
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "Python", icon: <FaPython /> },
     { name: "PostgreSQL", icon: <BiLogoPostgresql /> },
+    { name: "TypeScript", icon: <BiLogoTypescript /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "GithubActions", icon: <SiGithubactions /> },
+    { name: "AWS", icon: <FaAws /> },
+    { name: "FastApi", icon: <SiFastapi /> },
+    { name: "Git", icon: <FaGithub /> },
   ];
 
   return (
