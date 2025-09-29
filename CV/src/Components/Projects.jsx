@@ -33,6 +33,15 @@ export default function Projects() {
       repobackend: "https://github.com/adrianny90/Final_project_server",
       repofrontend: "https://github.com/adrianny90/Final_project_client",
     },
+    {
+      title: "Production dashboard",
+      description:
+        "A modern web application for visualizing production data, featuring user authentication, interactive charts, and a calendar integration. Built with a full-stack architecture using React for the frontend and FastAPI for the backend, this dashboard provides secure access to insights and scheduling tools.FeaturesUser Authentication: Secure JWT-based login and user registration. Data Visualization: Interactive charts (e.g., bar, line, pie) for production metrics.",
+      image:
+        "https://www.newtarget.com/wp-content/uploads/2024/12/NTGraphics_Data-Visualization-1024x1024.png",
+      link: "https://productiondashboardclient.onrender.com",
+      repo: "https://github.com/adrianny90/ProductionDashboard",
+    },
   ];
   const projekte = [
     {
@@ -62,6 +71,15 @@ export default function Projects() {
       repobackend: "https://github.com/adrianny90/Final_project_server",
       repofrontend: "https://github.com/adrianny90/Final_project_client",
     },
+    {
+      title: "Produktions-Dashboard",
+      description:
+        "Eine moderne Webanwendung zur Visualisierung von Produktionsdaten mit Benutzerauthentifizierung, interaktiven Diagrammen und einer Kalenderintegration. Dieses Dashboard basiert auf einer Full-Stack-Architektur mit React für das Frontend und FastAPI für das Backend und bietet sicheren Zugriff auf Einblicke und Planungstools. Funktionen: Benutzerauthentifizierung: Sichere JWT-basierte Anmeldung und Benutzerregistrierung. Datenvisualisierung: Interaktive Diagramme (z. B. Balken-, Linien-, Kreisdiagramme) für Produktionsmetriken.",
+      image:
+        "https://www.newtarget.com/wp-content/uploads/2024/12/NTGraphics_Data-Visualization-1024x1024.png",
+      link: "https://productiondashboardclient.onrender.com",
+      repo: "https://github.com/adrianny90/ProductionDashboard",
+    },
   ];
 
   return (
@@ -72,7 +90,7 @@ export default function Projects() {
             <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-12">
               My Projects
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {projects.map((project, index) => (
                 <motion.div
                   key={project.title}
@@ -151,7 +169,7 @@ export default function Projects() {
             <h2 className="text-3xl md:text-4xl font-bold text-teal-400 text-center mb-12">
               Meine Projekte
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {projekte.map((projekt, index) => (
                 <motion.div
                   key={projekt.title}
